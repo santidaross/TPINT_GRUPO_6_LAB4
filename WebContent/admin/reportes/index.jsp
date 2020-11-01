@@ -19,34 +19,21 @@
 	src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script>
 	$(document).ready(function() {
-		$('#tablaPrestamos').DataTable();
+		$('#tablaClientes').DataTable();
 	});
 </script>
 <meta charset="ISO-8859-1">
-<title>Prestamos</title>
+<title>Reportes - Administracion</title>
 </head>
 <body>
 	<div class="contenedor">
 		<jsp:include page="/menu.jsp"></jsp:include>
 		<div class="main">
 			<div class="header">
-				<h1>Prestamos</h1>
-				<h2><a href="${pageContext.request.contextPath}/clientes/prestamo_solicitud.jsp"></a></h2>
+				<h1>Reportes</h1>
+				<%-- <h2><a href="${pageContext.request.contextPath}/admin/reportes/index.jsp"></a></h2> --%>
 			</div>
 		<div class="contenido">
-			<div id="table" style= "width: 100%;margin: auto; overflow:auto;">
-				<table id="tablaClientes" class="pure-table"
-					style="margin: auto; white-space: nowrap;">
-					<tr class="pure-table-odd">
-						<th>Fecha</th>
-						<th>Detalle</th>
-						<th>Importe</th>
-						<th>Saldo</th>
-						<th>Tipo</th>
-					</tr>
-				</table>
-			
-		</div>
 	</div>
 	</div>
 	</div>

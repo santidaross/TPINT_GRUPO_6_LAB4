@@ -19,19 +19,19 @@
 	src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script>
 	$(document).ready(function() {
-		$('#tablaPrestamos').DataTable();
+		$('#tablaMovimientos').DataTable();
 	});
 </script>
 <meta charset="ISO-8859-1">
-<title>Prestamos</title>
+<title>Movimientos</title>
 </head>
 <body>
 	<div class="contenedor">
 		<jsp:include page="/menu.jsp"></jsp:include>
 		<div class="main">
 			<div class="header">
-				<h1>Prestamos</h1>
-				<h2><a href="${pageContext.request.contextPath}/clientes/prestamo_solicitud.jsp"></a></h2>
+				<h1>Movimientos</h1>
+				<%-- <h2><a href="${pageContext.request.contextPath}/clientes/movimientos.jsp"></a></h2> --%>
 			</div>
 		<div class="contenido">
 			<div id="table" style= "width: 100%;margin: auto; overflow:auto;">

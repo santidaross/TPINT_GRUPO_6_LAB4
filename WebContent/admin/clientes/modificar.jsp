@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Raleway" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/pure/pure-min.css" />
 <link rel="stylesheet" type="text/css"
@@ -13,21 +11,19 @@
 <title>Crear cliente</title>
 </head>
 <body>
-	<%-- header --%>
-	<div class="contenedor">
-		<jsp:include page="/menu.jsp"></jsp:include>
-		<div class="main">
-			<div class="header">
-				<h1>Clientes - Agregar</h1>
-				<h2>
-					<a
-						href="${pageContext.request.contextPath}/admin/clientes/alta.jsp">Listar
-						clientes</a>
-				</h2>
-			</div>
-			<%-- fin header --%>
-			<div class="contenido">
-				<form class="pure-form pure-form-aligned">
+<%-- header --%>
+<div class="contenedor">
+<jsp:include page="/menu.jsp"></jsp:include>
+<div class="main">
+<div class="header">
+<h1>Clientes</h1>
+        <h2><a href="/alta">Modificar clientes</a>
+           
+        </h2>
+</div>        
+<%-- fin header --%>
+<div class="contenido">
+<form class="pure-form pure-form-aligned">
 					<fieldset>
 						<div class="pure-control-group">
 							<label for="aligned-name">Usuario</label> <input type="text"
@@ -92,9 +88,10 @@
 							<button type="submit" class="pure-button pure-button-primary">Guardar</button>
 						</div>
 					</fieldset>
+					
 				</form>
-			</div>
-		</div>
-	</div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>

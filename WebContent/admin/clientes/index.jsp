@@ -4,10 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Raleway" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/pure/pure-min.css" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/custom.css" />
+	
 <link rel="stylesheet" type="text/css"
 	href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
 <script type="text/javascript" charset="utf8"
@@ -23,30 +26,20 @@
 <title>Clientes</title>
 </head>
 <body>
-	<div id="contenedor">
+	<div class="contenedor">
 		<jsp:include page="/menu.jsp"></jsp:include>
-		<div id="main">
+		<div class="main">
 			<div class="header">
 				<h1>Clientes</h1>
-				<h2>
-					<a href="/alta">Crear nuevo cliente</a>
-				</h2>
+				<h2><a href="${pageContext.request.contextPath}/admin/clientes/alta.jsp">Crear nuevo cliente</a></h2>
 			</div>
-		</div>
-
 		<div class="contenido">
-			<%-- 
-            &nbsp;&nbsp;&nbsp;
-            <a href="/listar">Listar clientes</a>  
-            --%>
-
-			<%-- fin header --%>
 			<div id="table" style= "width: 100%;margin: auto; overflow:auto;">
 				<table id="tablaClientes" class="pure-table"
 					style="margin: auto; white-space: nowrap;">
 					<tr class="pure-table-odd">
-						<th>Editar</th>
-						<th>Eliminar</th>
+						<th id="columna_editar">Editar</th>
+						<th id="columna_eliminar">Eliminar</th>
 						<th>Usuario</th>
 						<th>Contraseña</th>
 						<th>DNI</th>
@@ -89,7 +82,7 @@
             </c:forEach>
 --%>
 				</table>
-			</div>
+			
 		</div>
 	</div>
 	</div>
