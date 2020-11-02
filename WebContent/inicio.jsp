@@ -35,7 +35,7 @@
 						<label for="aligned-cb" class="pure-checkbox"> <input
 							type="checkbox" id="aligned-cb" /> Recordar usuario
 						</label>
-						<button type="submit" class="pure-button pure-button-primary">Iniciar
+						<button formaction="${pageContext.request.contextPath}/cliente/index.jsp" type="submit" class="pure-button pure-button-primary">Iniciar
 							sesion</button>
 					</div>
 				</fieldset>

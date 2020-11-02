@@ -19,18 +19,18 @@
 	src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script>
 	$(document).ready(function() {
-		$('#tablaMovimientos').DataTable();
+		$('#tablaCuentas').DataTable();
 	});
 </script>
 <meta charset="ISO-8859-1">
-<title>Cliente - Movimientos</title>
+<title>Cliente - Cuentas</title>
 </head>
 <body>
 	<div class="contenedor">
 		<jsp:include page="/menu.jsp"></jsp:include>
 		<div class="main">
 			<div class="header">
-				<h1>Movimientos</h1>
+				<h1>Cuentas</h1>
 				<%-- <h2><a href="${pageContext.request.contextPath}/clientes/movimientos.jsp"></a></h2> --%>
 			</div>
 		<div class="contenido">
@@ -38,11 +38,11 @@
 				<table id="tablaClientes" class="pure-table"
 					style="margin: auto; white-space: nowrap;">
 					<tr class="pure-table-odd">
-						<th>Fecha</th>
-						<th>Detalle</th>
-						<th>Importe</th>
+						<th>CBU</th>
+						<th>Numero</th>
 						<th>Saldo</th>
 						<th>Tipo</th>
+						<th>Ver movimientos</th>
 					</tr>
 				</table>
 			

@@ -10,7 +10,7 @@
 	href="${pageContext.request.contextPath}/css/pure/pure-min.css" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/custom.css" />
-	
+
 <link rel="stylesheet" type="text/css"
 	href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
 <script type="text/javascript" charset="utf8"
@@ -23,7 +23,7 @@
 	});
 </script>
 <meta charset="ISO-8859-1">
-<title>Prestamos</title>
+<title>Cliente - Prestamos</title>
 </head>
 <body>
 	<div class="contenedor">
@@ -31,24 +31,24 @@
 		<div class="main">
 			<div class="header">
 				<h1>Prestamos</h1>
-				<h2><a href="${pageContext.request.contextPath}/clientes/prestamo_solicitud.jsp"></a></h2>
+				<h2><a href="${pageContext.request.contextPath}/cliente/prestamo_solicitud.jsp">Solicitar prestamo</a></h2>
 			</div>
-		<div class="contenido">
-			<div id="table" style= "width: 100%;margin: auto; overflow:auto;">
-				<table id="tablaClientes" class="pure-table"
-					style="margin: auto; white-space: nowrap;">
-					<tr class="pure-table-odd">
-						<th>Fecha</th>
-						<th>Detalle</th>
-						<th>Importe</th>
-						<th>Saldo</th>
-						<th>Tipo</th>
-					</tr>
-				</table>
-			
+			<div class="contenido">
+				<div id="table" style="width: 100%; margin: auto; overflow: auto;">
+					<table id="tablaClientes" class="pure-table"
+						style="margin: auto; white-space: nowrap;">
+						<tr class="pure-table-odd">
+							<th>Fecha</th>
+							<th>Detalle</th>
+							<th>Importe</th>
+							<th>Saldo</th>
+							<th>Tipo</th>
+						</tr>
+					</table>
+
+				</div>
+			</div>
 		</div>
-	</div>
-	</div>
 	</div>
 </body>
 </html>

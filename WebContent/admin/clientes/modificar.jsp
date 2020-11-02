@@ -17,9 +17,7 @@
 <div class="main">
 <div class="header">
 <h1>Clientes</h1>
-        <h2><a href="/alta">Modificar clientes</a>
-           
-        </h2>
+        <h2><a href="/alta">Modificar clientes</a></h2>
 </div>        
 <%-- fin header --%>
 <div class="contenido">

@@ -6,6 +6,9 @@
 		<ul class="pure-menu-list">
 			<li class="pure-menu-item menu-item-divided"><span
 				class="pure-menu-heading">Usuario</span>
+				<li class="pure-menu-item"><a
+				href="${pageContext.request.contextPath}/cliente/cuentas.jsp"
+				class="pure-menu-link">Cuentas</a></li>
 			<li class="pure-menu-item"><a
 				href="${pageContext.request.contextPath}/cliente/movimientos.jsp"
 				class="pure-menu-link">Movimientos</a></li>
@@ -18,7 +21,7 @@
 			<li class="pure-menu-item"><a
 				href="${pageContext.request.contextPath}/cliente/reportes.jsp"
 				class="pure-menu-link">Reportes</a></li>
-			<li class="pure-menu-item menu-item-divided"><a href="#"
+			<li class="pure-menu-item menu-item-divided"><a href="${pageContext.request.contextPath}/inicio.jsp"
 				class="pure-menu-link">Cerrar sesión</a></li>
 		</ul>
 		</li>
