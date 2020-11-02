@@ -5,7 +5,7 @@
 			class="pure-menu-heading">INICIO</a>
 		<ul class="pure-menu-list">
 			<li class="pure-menu-item menu-item-divided"><span
-				class="pure-menu-heading">Usuario</span>
+				class="pure-menu-heading">Nombre Usuario</span>
 				<li class="pure-menu-item"><a
 				href="${pageContext.request.contextPath}/cliente/cuentas.jsp"
 				class="pure-menu-link">Cuentas</a></li>

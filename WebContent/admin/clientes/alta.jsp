@@ -18,7 +18,7 @@
 		<jsp:include page="/menu.jsp"></jsp:include>
 		<div class="main">
 			<div class="header">
-				<h1>Clientes - Agregar</h1>
+				<h1>Agregar Cliente</h1>
 				<h2>
 					<a
 						href="${pageContext.request.contextPath}/admin/clientes/alta.jsp">Listar
