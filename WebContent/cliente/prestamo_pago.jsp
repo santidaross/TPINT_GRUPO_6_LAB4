@@ -31,24 +31,33 @@
 		<div class="main">
 			<div class="header">
 				<h1>Prestamos</h1>
-				<h2><a href="${pageContext.request.contextPath}/cliente/prestamo_solicitud.jsp">Solicitar prestamo</a></h2>
-				<h2><a href="${pageContext.request.contextPath}/cliente/prestamo_pago.jsp">Pago de prestamo</a></h2>
+				<h2><a href="${pageContext.request.contextPath}/cliente/prestamo.jsp">Prestamos pendientes</a></h2>
 			</div>
 			<div class="contenido">
-			<h3>Prestamos solicitados</h3>
-				<div id="table" style="width: 100%; margin: auto; overflow: auto;">
-					<table id="tablaClientes" class="pure-table"
-						style="margin: auto; white-space: nowrap;">
-						<tr class="pure-table-odd">
-							<th>Fecha</th>
-							<th>Detalle</th>
-							<th>Importe</th>
-							<th>Saldo</th>
-							<th>Tipo</th>
-						</tr>
-					</table>
-
-				</div>
+				<form class="pure-form pure-form-aligned">
+					<fieldset><div class="pure-control-group">
+					<label for="aligned-name">Prestamo a pagar</label>
+						<select id="selectPestamo">
+								
+							</select>
+							</div>
+						<div class="pure-control-group">
+							<label for="aligned-name">Cuota a pagar</label> <select id="selectCuota">
+							</select>
+						</div>
+						<div class="pure-control-group">
+							<label for="aligned-name">Cuenta a depositar</label> <select id="selectSexo">
+							</select>
+						</div>
+						<div class="pure-control-group">
+							<label for="aligned-name">Importe a pagar</label> <input type="text"
+								id="aligned-name" value="" readonly="" />
+						</div>
+						<div class="pure-controls">
+							<button type="submit" class="pure-button pure-button-primary">Pagar cuota</button>
+						</div>
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</div>
