@@ -1,12 +1,12 @@
-create schema Bank;
+create schema dbBank;
 
-use Bank;
+use dbBank;
 
 create table usuario
 (
-	usuario VARCHAR(10) NOT NULL PRIMARY KEY,
-	dni_cliente VARCHAR(8),
+	username VARCHAR(10) NOT NULL PRIMARY KEY,
 	password VARCHAR(25),
+	//dni_cliente VARCHAR(8),
 	tipo INT,
 	baja BOOL
 );
@@ -14,7 +14,7 @@ create table usuario
 create table cliente 
 (
 	dni VARCHAR(8) NOT NULL PRIMARY KEY,
-	usuario VARCHAR(10),
+	username VARCHAR(10),
 	cuil VARCHAR(11),
 	nombre VARCHAR(50),
 	apellido VARCHAR(50),
@@ -29,19 +29,21 @@ create table cliente
 );
 
 create table telefono (
-	dni VARCHAR(8) NOT NULL PRIMARY KEY,
-	telefono VARCHAR(20) NOT NULL PRIMARY KEY
+	dni VARCHAR(8) NOT NULL,
+	telefono VARCHAR(20) NOT NULL,
+    PRIMARY KEY (dni,telefono)
 );
 
 create table cuenta
 (
-	dni_cliente VARCHAR(8) NOT NULL PRIMARY KEY,
-	cbu VARCHAR(22) NOT NULL PRIMARY KEY,
+	dni_cliente VARCHAR(8) NOT NULL,
+	cbu VARCHAR(22) NOT NULL,
 	fecha_creacion DATE,
 	tipo INT,
 	numero VARCHAR(10),
-	saldo MONEY,
-	baja BOOL
+	saldo DECIMAL(19,4),
+	baja BOOL,
+    PRIMARY KEY (dni_cliente, cbu)
 );
 
 
@@ -51,8 +53,8 @@ create table movimiento
 	dni_cliente VARCHAR(8),
 	fecha DATE,
 	detalle VARCHAR(50),
-	importe MONEY,
-	saldo MONEY,
+	importe DECIMAL(19,4),
+	saldo DECIMAL(19,4),
 	tipo INT
 );
 
@@ -61,9 +63,9 @@ create table prestamo_solicitud
 	id VARCHAR(8) NOT NULL PRIMARY KEY,
 	dni_cliente VARCHAR(8),
 	fecha DATE,
-	importe_solicitado MONEY,
-	importe_a_pagar MONEY,
-	plazo_meses DATE,
+	importe_solicitado DECIMAL(19,4),
+	importe_a_pagar DECIMAL(19,4),
+	plazo_meses DATE
 );
 
 
@@ -81,9 +83,17 @@ create table prestamo_cuota
 	numero_cuota INT,
 	cuotas INT,
 	fecha_limite_cuota DATE,
-	importe_cuota MONEY,
+	importe_cuota DECIMAL(19,4),
 	estado_cuota INT
 );
 
 
-INSERT INTO usuario (usuario,password,dni_)
+// INSERTS
+
+INSERT INTO `dbbank`.`usuario`
+(`usuario`,`password`,`tipo`,`baja`)
+VALUES
+("sross",123,1,0),
+("aross",321,0,0),
+("flopez",231,0,1),
+("rlopez",213,1,1);
