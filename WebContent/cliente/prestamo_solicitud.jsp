@@ -36,26 +36,13 @@
 			<div class="contenido">
 				<form class="pure-form pure-form-aligned">
 					<fieldset>
-						
 						<div class="pure-control-group">
-							<label for="aligned-name">Prestamo a pagar</label> <select id="selectSexo">
-							</select>
+							<label for="aligned-name">Importe a solicitar</label> <input type="text"
+								id="aligned-name" placeholder="Importe a solicitar"  />
 						</div>
 						<div class="pure-control-group">
-							<label for="aligned-name">Cuota</label> <select id="selectSexo">
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
+							<label for="aligned-name">Plazo</label> <select id="selectCuota">
 							</select>
-						</div>
-						<div class="pure-control-group">
-							<label for="aligned-name">Importe a pagar</label> <input type="text"
-								id="aligned-name" value="12234" readonly="" />
 						</div>
 						<div class="pure-control-group">
 							<label for="aligned-name">Cuenta a depositar</label> <select id="selectCuenta">
