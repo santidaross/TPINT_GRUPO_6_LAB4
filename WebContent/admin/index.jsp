@@ -11,7 +11,7 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/custom.css" />
 <meta charset="ISO-8859-1">
-<title>Cliente - Principal</title>
+<title>Administrador - Principal</title>
 </head>
 <body>
 <div class="contenedor">

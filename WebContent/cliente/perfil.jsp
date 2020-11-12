@@ -30,7 +30,8 @@
 		<jsp:include page="/menu.jsp"></jsp:include>
 		<div class="main">
 			<div class="header">
-				<h1>Nombre Usuario</h1>
+				<jsp:useBean id="sesionUsuario" scope="session" class="entidad.Usuario" />
+				<h1><jsp:getProperty name="sesionUsuario" property="username"/></h1>
 				<h2>Informacion de cliente</h2>
 			</div>
 			<div class="contenido">
